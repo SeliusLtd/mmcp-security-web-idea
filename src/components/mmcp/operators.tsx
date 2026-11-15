@@ -11,9 +11,9 @@ export function Operators() {
 
   const gallery: GalleryItem[] = operators.map((o) => ({
     src: o.image,
-    alt: o.name,
-    title: o.name,
-    caption: `${o.role} · ${o.grade}`,
+    alt: o.role,
+    title: o.role,
+    caption: o.grade,
   }));
 
   return (
@@ -43,7 +43,7 @@ export function Operators() {
               <div className="relative aspect-[3/4] w-full overflow-hidden border border-border bg-card transition-colors duration-500 group-hover:border-accent">
                 <img
                   src={o.image}
-                  alt={o.name}
+                  alt={o.role}
                   className="h-full w-full object-cover grayscale transition-all duration-[1000ms] ease-out group-hover:scale-105 group-hover:grayscale-0"
                   draggable={false}
                 />
@@ -60,13 +60,12 @@ export function Operators() {
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <div className="font-display text-lg leading-tight text-foreground">
-                    {o.name}
+                    {o.role}
                   </div>
                 </div>
               </div>
               <div className="mt-3">
-                <div className="text-sm text-foreground">{o.role}</div>
-                <div className="mt-0.5 text-[10px] tracking-mono uppercase text-muted-foreground">
+                <div className="text-[10px] tracking-mono uppercase text-muted-foreground">
                   {o.grade}
                 </div>
               </div>

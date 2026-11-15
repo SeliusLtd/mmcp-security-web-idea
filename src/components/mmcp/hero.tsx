@@ -62,6 +62,15 @@ export function Hero() {
                 "linear-gradient(180deg, oklch(0 0 0 / 0.55) 0%, oklch(0 0 0 / 0.15) 30%, oklch(0 0 0 / 0.05) 50%, oklch(0 0 0 / 0.75) 100%)",
             }}
           />
+          {/* Left vignette so the copy stays legible over bright plates */}
+          <div
+            aria-hidden
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(90deg, oklch(0 0 0 / 0.82) 0%, oklch(0 0 0 / 0.55) 34%, oklch(0 0 0 / 0.18) 58%, transparent 76%)",
+            }}
+          />
           <div
             aria-hidden
             className="absolute inset-0 mix-blend-overlay"

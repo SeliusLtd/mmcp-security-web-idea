@@ -1,7 +1,5 @@
 import type { GalleryItem } from "@/lib/store/mmcp";
 
-const C = "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt";
-
 export type Service = {
   id: string;
   index: string;
@@ -14,7 +12,7 @@ export type Service = {
 
 export const heroPlates: GalleryItem[] = [
   {
-    src: `${C}/ed8eaca9142f.jpg`,
+    src: `/img/control-room.webp`,
     alt: "24-hour tactical control room with multi-wall surveillance monitors",
     title: "The Watch Floor",
     caption:
@@ -26,7 +24,7 @@ export const heroPlates: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/7e788e0cf906.jpg`,
+    src: `/img/armed-response.webp`,
     alt: "Armed response officer in tactical uniform standing watch at dusk",
     title: "Armed Response — First Wave",
     caption:
@@ -38,7 +36,7 @@ export const heroPlates: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/88f03d9f1cc0.jpg`,
+    src: `/img/patrol.webp`,
     alt: "Armoured security response vehicle on a road at dusk",
     title: "Patrol & Pursuit",
     caption:
@@ -50,7 +48,7 @@ export const heroPlates: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/a993702d8990.jpg`,
+    src: `/img/ground.webp`,
     alt: "Limpopo bushveld at sunset with acacia trees and dry grass",
     title: "Ground We Hold — Limpopo",
     caption:
@@ -65,7 +63,7 @@ export const heroPlates: GalleryItem[] = [
 
 export const operations: GalleryItem[] = [
   {
-    src: `${C}/06dea44b6063.jpg`,
+    src: `/img/night.webp`,
     alt: "Night-time surveillance operations wall",
     title: "Operation Nightwatch",
     caption:
@@ -77,7 +75,7 @@ export const operations: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/4054ab90492c.jpg`,
+    src: `/img/k9.webp`,
     alt: "K9 handler working with patrol dog at dusk",
     title: "K9 Field Deployment",
     caption:
@@ -89,7 +87,7 @@ export const operations: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/b6f995084bed.jpg`,
+    src: `/img/aerial.webp`,
     alt: "Surveillance drone in flight at golden hour",
     title: "Aerial Overwatch",
     caption:
@@ -101,7 +99,7 @@ export const operations: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/42d9a10a216c.jpeg`,
+    src: `/img/surveillance.webp`,
     alt: "Close-up of CCTV camera installation",
     title: "Verified Surveillance",
     caption:
@@ -113,7 +111,7 @@ export const operations: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/cd62c9a7c397.jpg`,
+    src: `/img/close-protection.webp`,
     alt: "Tactical officer in formation",
     title: "Close Protection Detail",
     caption:
@@ -125,7 +123,7 @@ export const operations: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/50ac281e840c.jpg`,
+    src: `/img/estate.webp`,
     alt: "Gated residential estate entrance at dusk",
     title: "Estate Perimeter — Sealed",
     caption:
@@ -146,7 +144,7 @@ export const services: Service[] = [
     discipline: "Reaction · Armed",
     summary:
       "PSIRA-registered armed officers deploy from four Polokwane cells to any verified alarm within minutes.",
-    image: `${C}/7e788e0cf906.jpg`,
+    image: `/img/armed-response.webp`,
     spec: [
       { label: "Response", value: "< 6 min" },
       { label: "Cells", value: "4" },
@@ -160,7 +158,7 @@ export const services: Service[] = [
     discipline: "Presence · Patrol",
     summary:
       "Visible, disciplined guarding officers trained in de-escalation, access control and incident reporting.",
-    image: `${C}/25a74dac4f9d.jpg`,
+    image: `/img/commercial.webp`,
     spec: [
       { label: "Officers", value: "210+" },
       { label: "PSIRA", value: "Grade A–E" },
@@ -174,7 +172,7 @@ export const services: Service[] = [
     discipline: "Optics · AI",
     summary:
       "Hybrid CCTV with AI verification — only confirmed threats reach the response fleet.",
-    image: `${C}/9f48cb345d8a.jpg`,
+    image: `/img/surveillance.webp`,
     spec: [
       { label: "False-alarm cut", value: "92%" },
       { label: "Verification", value: "< 90 sec" },
@@ -188,7 +186,7 @@ export const services: Service[] = [
     discipline: "Sensors · Linked",
     summary:
       "Intrusion, beam and panic infrastructure wired straight to the watch floor with dual-path signalling.",
-    image: `${C}/3f5249ad854a.jpg`,
+    image: `/img/alarm.webp`,
     spec: [
       { label: "Signalling", value: "dual-path" },
       { label: "Panic", value: "mobile + fixed" },
@@ -202,7 +200,7 @@ export const services: Service[] = [
     discipline: "Close · Discreet",
     summary:
       "Close-protection details for principals in transit, residence and public engagement.",
-    image: `${C}/cd62c9a7c397.jpg`,
+    image: `/img/close-protection.webp`,
     spec: [
       { label: "Detail", value: "2 – 6" },
       { label: "Profile", value: "discreet" },
@@ -216,7 +214,7 @@ export const services: Service[] = [
     discipline: "Specialist · Mobile",
     summary:
       "Patrol and detection dogs plus licensed RPAS drones cover ground cameras cannot.",
-    image: `${C}/4054ab90492c.jpg`,
+    image: `/img/k9.webp`,
     spec: [
       { label: "K9 teams", value: "6" },
       { label: "RPAS", value: "licensed" },
@@ -239,28 +237,28 @@ export const sectors: Sector[] = [
     index: "S—01",
     title: "Residential & Estate",
     note: "Layered perimeter, access control, patrols.",
-    image: `${C}/50ac281e840c.jpg`,
+    image: `/img/estate.webp`,
   },
   {
     id: "commercial",
     index: "S—02",
     title: "Commercial & Retail",
     note: "Verified surveillance, loss prevention.",
-    image: `${C}/9274e44e6e08.jpg`,
+    image: `/img/commercial.webp`,
   },
   {
     id: "industrial",
     index: "S—03",
     title: "Industrial & Mining",
     note: "High-risk perimeter, response, escort.",
-    image: `${C}/8700d40f3f8b.jpg`,
+    image: `/img/ground.webp`,
   },
   {
     id: "agricultural",
     index: "S—04",
     title: "Agricultural Holdings",
     note: "Aerial patrol, perimeter, stock loss.",
-    image: `${C}/ca421bd890be.jpg`,
+    image: `/img/farm.webp`,
   },
 ];
 
@@ -283,7 +281,7 @@ export const packages: Pack[] = [
     tier: "Verified alarms + response",
     price: "R 590",
     cadence: "/ month",
-    image: `${C}/4a6e96896df7.jpg`,
+    image: `/img/estate.webp`,
     includes: [
       "24/7 alarm monitoring",
       "Armed response — 4 cells",
@@ -298,7 +296,7 @@ export const packages: Pack[] = [
     tier: "Surveillance + guarding",
     price: "R 1 850",
     cadence: "/ month",
-    image: `${C}/9f48cb345d8a.jpg`,
+    image: `/img/surveillance.webp`,
     includes: [
       "Everything in Sentinel",
       "AI-verified CCTV (8 cam)",
@@ -313,7 +311,7 @@ export const packages: Pack[] = [
     tier: "Full estate / site command",
     price: "By brief",
     cadence: "bespoke",
-    image: `${C}/ed8eaca9142f.jpg`,
+    image: `/img/control-room.webp`,
     includes: [
       "Everything in Vanguard",
       "Dedicated site commander",
@@ -326,7 +324,7 @@ export const packages: Pack[] = [
 
 export type Operator = {
   id: string;
-  name: string;
+  /** No personal names are published: the post is the identity. */
   role: string;
   grade: string;
   image: string;
@@ -335,31 +333,27 @@ export type Operator = {
 export const operators: Operator[] = [
   {
     id: "o1",
-    name: "T. Mahasha",
     role: "Operations Director",
     grade: "PSIRA Grade A · 18 yrs",
-    image: `${C}/ba816881a9d4.jpeg`,
+    image: "/img/portrait-operations.webp",
   },
   {
     id: "o2",
-    name: "M. Chauke",
     role: "Head, Armed Response",
     grade: "PSIRA Grade E · 14 yrs",
-    image: `${C}/cd62c9a7c397.jpg`,
+    image: "/img/portrait-armed.webp",
   },
   {
     id: "o3",
-    name: "L. Mokwena",
     role: "Watch Floor Lead",
     grade: "PSIRA Grade B · 11 yrs",
-    image: `${C}/7e788e0cf906.jpg`,
+    image: "/img/portrait-watch.webp",
   },
   {
     id: "o4",
-    name: "S. Nkuna",
     role: "Close Protection Lead",
     grade: "PSIRA Grade E · 16 yrs",
-    image: `${C}/25a74dac4f9d.jpg`,
+    image: "/img/portrait-close.webp",
   },
 ];
 
@@ -371,7 +365,7 @@ export const fieldBriefing = {
     "From our watch floor in Polokwane we hold Limpopo — its estates, its mines, its shops and its homes — under a single, accountable picture. Four response cells cover the metropolitan area; aerial overwatch covers the ground that cameras cannot.",
     "We measure ourselves not in incidents responded to, but in incidents prevented. The quiet night is the work done well.",
   ],
-  signoff: "— T. Mahasha, Operations Director",
+  signoff: "— MMCP Securities, Polokwane",
 };
 
 export const stats: { value: string; label: string }[] = [
