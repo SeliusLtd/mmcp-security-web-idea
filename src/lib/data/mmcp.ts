@@ -50,11 +50,11 @@ export const heroPlates: GalleryItem[] = [
     ],
   },
   {
-    src: `${C}/4a4565e6384e.jpg`,
-    alt: "Wide cinematic landscape of Limpopo savanna at dusk",
+    src: `${C}/a993702d8990.jpg`,
+    alt: "Limpopo bushveld at sunset with acacia trees and dry grass",
     title: "Ground We Hold — Limpopo",
     caption:
-      "From Polokwane outwards, MMCP secures estates, mines, retail centres and agricultural holdings across the province.",
+      "From Polokwane outwards — its city grid, its suburbs, its bushveld — MMCP holds Limpopo under one accountable picture.",
     spec: [
       { label: "Region", value: "Limpopo" },
       { label: "Sites secured", value: "340+" },
@@ -246,21 +246,21 @@ export const sectors: Sector[] = [
     index: "S—02",
     title: "Commercial & Retail",
     note: "Verified surveillance, loss prevention.",
-    image: `${C}/06dea44b6063.jpg`,
+    image: `${C}/9274e44e6e08.jpg`,
   },
   {
     id: "industrial",
     index: "S—03",
     title: "Industrial & Mining",
     note: "High-risk perimeter, response, escort.",
-    image: `${C}/8ba1b9ba5d69.jpg`,
+    image: `${C}/8700d40f3f8b.jpg`,
   },
   {
     id: "agricultural",
     index: "S—04",
     title: "Agricultural Holdings",
     note: "Aerial patrol, perimeter, stock loss.",
-    image: `${C}/4a4565e6384e.jpg`,
+    image: `${C}/ca421bd890be.jpg`,
   },
 ];
 
