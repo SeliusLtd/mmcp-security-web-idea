@@ -12,6 +12,7 @@ const nav = [
   { href: "#sectors", label: "Sectors" },
   { href: "#packages", label: "Protection Tiers" },
   { href: "#operators", label: "Operators" },
+  { href: "#faq", label: "FAQ" },
   { href: "#engage", label: "Engage" },
 ];
 

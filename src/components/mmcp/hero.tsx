@@ -67,7 +67,7 @@ export function Hero() {
             className="absolute inset-0 mix-blend-overlay"
             style={{
               background:
-                "radial-gradient(80% 60% at 70% 30%, oklch(0.72 0.13 70 / 0.18), transparent 60%)",
+                "radial-gradient(80% 60% at 70% 30%, oklch(0.62 0.19 255 / 0.22), transparent 60%)",
             }}
           />
         </motion.div>

@@ -16,6 +16,7 @@ const footerNav = [
     links: [
       { label: "Protection tiers", href: "#packages" },
       { label: "Operators", href: "#operators" },
+      { label: "FAQ", href: "#faq" },
       { label: "Request briefing", href: "#engage" },
     ],
   },
