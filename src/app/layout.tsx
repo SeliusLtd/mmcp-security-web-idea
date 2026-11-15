@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "executive protection South Africa",
   ],
   authors: [{ name: "MMCP Securities" }],
-  icons: { icon: "/logo.svg" },
+  icons: { icon: "/icon.png" },
   openGraph: {
     title: "MMCP Securities — Polokwane",
     description:
